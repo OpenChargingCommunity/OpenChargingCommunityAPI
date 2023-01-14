@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>community.charging.open.api</RootNamespace>
+    <AssemblyName>community.charging.open.api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HTTPRoot\login\login-en.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="HTTPRoot\login\login-en.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.NetCore" Version="1.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Hermod\Hermod\Hermod.csproj" />
+    <ProjectReference Include="..\..\OpenChargingCloudAPI\OpenChargingCloudAPI\OpenChargingCloudAPI.csproj" />
+    <ProjectReference Include="..\..\SMSAPI\SMSAPI\SMSAPI.csproj" />
+    <ProjectReference Include="..\..\Styx\Styx\Styx.csproj" />
+    <ProjectReference Include="..\..\TelegramBotAPI\TelegramBotAPI\TelegramBotAPI.csproj" />
+    <ProjectReference Include="..\..\UsersAPI\UsersAPI\UsersAPI.csproj" />
+    <ProjectReference Include="..\..\WWCP_BNetzA\WWCP_BNetzA\WWCP_BNetzA.csproj" />
+    <ProjectReference Include="..\..\WWCP_Core\WWCP_Core\WWCP_Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Ladesaeulenregister_2022-11_CSV.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HTTPRoot\css\" />
+    <Folder Include="HTTPRoot\defaults\" />
+    <Folder Include="HTTPRoot\images\" />
+  </ItemGroup>
+
+</Project>
