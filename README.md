@@ -1,3 +1,3 @@
 # Open Charging Community API
 
-The Open Charging Cloud API.
+The Open Charging Community API.
