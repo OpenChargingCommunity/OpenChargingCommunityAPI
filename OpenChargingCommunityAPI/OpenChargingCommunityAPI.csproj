@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="HTTPRoot\index.html" />
+    <None Remove="HTTPRoot\legal\impress.html" />
     <None Remove="HTTPRoot\login\login-en.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="HTTPRoot\index.html" />
+    <EmbeddedResource Include="HTTPRoot\legal\impress.html" />
     <EmbeddedResource Include="HTTPRoot\login\login-en.html" />
   </ItemGroup>
 
