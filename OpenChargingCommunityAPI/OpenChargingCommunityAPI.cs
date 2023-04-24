@@ -831,9 +831,9 @@ namespace cloud.charging.open.API
         /// <param name="HTTPResponse">A HTTP error response.</param>
         /// <returns>True, when roaming network was found; false else.</returns>
         public static Boolean ParseRoamingNetworkAndEMobilityProvider(this HTTPRequest           HTTPRequest,
-                                                                      OpenChargingCommunityAPI       OpenChargingCommunityAPI,
+                                                                      OpenChargingCommunityAPI   OpenChargingCommunityAPI,
                                                                       out IRoamingNetwork?       RoamingNetwork,
-                                                                      out EMobilityProvider?     EMobilityProvider,
+                                                                      out IEMobilityProvider?    EMobilityProvider,
                                                                       out HTTPResponse.Builder?  HTTPResponse)
         {
 
