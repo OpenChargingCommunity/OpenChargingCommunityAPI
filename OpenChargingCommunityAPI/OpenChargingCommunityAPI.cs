@@ -1880,7 +1880,7 @@ namespace cloud.charging.open.API
             if (HTTPClient is null)
                 throw new ArgumentNullException(nameof(HTTPClient),  "The given HTTP client must not be null!");
 
-            if (URL.IsNullOrEmpty())
+            if (URL.IsNullOrEmpty)
                 throw new ArgumentNullException(nameof(URL),         "The given URI must not be null!");
 
             #endregion
@@ -1903,7 +1903,7 @@ namespace cloud.charging.open.API
             if (HTTPClient is null)
                 throw new ArgumentNullException(nameof(HTTPClient),  "The given HTTP client must not be null!");
 
-            if (URL.IsNullOrEmpty())
+            if (URL.IsNullOrEmpty)
                 throw new ArgumentNullException(nameof(URL),         "The given URI must not be null!");
 
             #endregion
@@ -2076,8 +2076,10 @@ namespace cloud.charging.open.API
                                         TimeSpan?                             WardenInitialDelay                 = null,
                                         TimeSpan?                             WardenCheckEvery                   = null,
 
-                                        IEnumerable<URLWith_APIKeyId>?        RemoteAuthServers                  = null,
+                                        IEnumerable<URLWithAPIKey>?           RemoteAuthServers                  = null,
                                         IEnumerable<APIKey_Id>?               RemoteAuthAPIKeys                  = null,
+
+                                        Boolean?                              AllowsAnonymousReadAccesss         = true,
 
                                         Boolean?                              IsDevelopment                      = null,
                                         IEnumerable<String>?                  DevelopmentServers                 = null,
@@ -2141,6 +2143,8 @@ namespace cloud.charging.open.API
 
                    RemoteAuthServers,
                    RemoteAuthAPIKeys,
+
+                   AllowsAnonymousReadAccesss,
 
                    IsDevelopment,
                    DevelopmentServers,
