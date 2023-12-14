@@ -17,7 +17,6 @@
 
 #region Usings
 
-using System.Net.Security;
 using System.Security.Authentication;
 
 using Newtonsoft.Json.Linq;
@@ -36,7 +35,6 @@ using org.GraphDefined.Vanaheimr.Hermod.Sockets.TCP;
 using social.OpenData.UsersAPI;
 
 using cloud.charging.open.protocols.WWCP;
-using cloud.charging.open.protocols.WWCP.Net.IO.JSON;
 using cloud.charging.open.protocols.WWCP.Networking;
 
 #endregion
@@ -104,7 +102,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -124,7 +122,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -198,7 +196,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -215,7 +213,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -289,7 +287,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -306,7 +304,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -376,7 +374,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -396,7 +394,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -412,7 +410,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -429,7 +427,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -499,7 +497,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -519,7 +517,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -535,7 +533,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -552,7 +550,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -629,7 +627,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -647,7 +645,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -665,7 +663,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid charging session identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -682,7 +680,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown charging session identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -751,7 +749,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -771,7 +769,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -786,7 +784,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid reservation identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -803,7 +801,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown reservation identification!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -877,7 +875,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EMobilityProviderId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -894,7 +892,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EMobilityProviderId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -974,7 +972,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ParkingOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -991,7 +989,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ParkingOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1065,7 +1063,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid SmartCityId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1082,7 +1080,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown SmartCityId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1155,7 +1153,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid GridOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1172,7 +1170,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown GridOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1251,7 +1249,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1268,7 +1266,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1288,7 +1286,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1305,7 +1303,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1387,7 +1385,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1404,7 +1402,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1424,7 +1422,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1441,7 +1439,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1461,7 +1459,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1478,7 +1476,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1555,7 +1553,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1571,7 +1569,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1588,7 +1586,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid BrandId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1604,7 +1602,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown BrandId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1678,7 +1676,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1694,7 +1692,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1711,7 +1709,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationGroupId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1727,7 +1725,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationGroupId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1801,7 +1799,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1817,7 +1815,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1834,7 +1832,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEGroupId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -1850,7 +1848,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.NotFound,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    ContentType     = HTTPContentType.JSON_UTF8,
+                    ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEGroupId!"" }".ToUTF8Bytes(),
                     Connection      = "close"
                 };
@@ -2298,7 +2296,7 @@ namespace cloud.charging.open.API
                                           return Task.FromResult(
                                               new HTTPResponse.Builder(Request) {
                                                   HTTPStatusCode  = HTTPStatusCode.OK,
-                                                  ContentType     = HTTPContentType.HTML_UTF8,
+                                                  ContentType     = HTTPContentType.Text.HTML_UTF8,
                                                   Content         = file.ToUTF8Bytes(),
                                                   CacheControl    = "public, max-age=300",
                                                   Connection      = "close"
@@ -2333,21 +2331,20 @@ namespace cloud.charging.open.API
 
                                       var responseContentType  = fileName.Remove(0, fileName.LastIndexOf(".") + 1) switch {
 
-                                          "htm"   => HTTPContentType.HTML_UTF8,
-                                          "html"  => HTTPContentType.HTML_UTF8,
-                                          "css"   => HTTPContentType.CSS_UTF8,
-                                          "gif"   => HTTPContentType.GIF,
-                                          "jpg"   => HTTPContentType.JPEG,
-                                          "jpeg"  => HTTPContentType.JPEG,
-                                          "svg"   => HTTPContentType.SVG,
-                                          "png"   => HTTPContentType.PNG,
-                                          "ico"   => HTTPContentType.ICO,
-                                          "swf"   => HTTPContentType.SWF,
-                                          "js"    => HTTPContentType.JAVASCRIPT_UTF8,
-                                          "txt"   => HTTPContentType.TEXT_UTF8,
-                                          "xml"   => HTTPContentType.XMLTEXT_UTF8,
+                                          "htm"   => HTTPContentType.Text.HTML_UTF8,
+                                          "html"  => HTTPContentType.Text.HTML_UTF8,
+                                          "css"   => HTTPContentType.Text.CSS_UTF8,
+                                          "gif"   => HTTPContentType.Image.GIF,
+                                          "jpg"   => HTTPContentType.Image.JPEG,
+                                          "jpeg"  => HTTPContentType.Image.JPEG,
+                                          "svg"   => HTTPContentType.Image.SVG,
+                                          "png"   => HTTPContentType.Image.PNG,
+                                          "ico"   => HTTPContentType.Image.ICO,
+                                          "js"    => HTTPContentType.Text.JAVASCRIPT_UTF8,
+                                          "txt"   => HTTPContentType.Text.PLAIN,
+                                          "xml"   => HTTPContentType.Text.XML_UTF8,
 
-                                          _       => HTTPContentType.OCTETSTREAM,
+                                          _       => HTTPContentType.Application.OCTETSTREAM,
 
                                       };
 
