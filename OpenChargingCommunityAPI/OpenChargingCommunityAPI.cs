@@ -43,7 +43,7 @@ namespace cloud.charging.open.API
 {
 
     /// <summary>
-    /// Extention methods for the Open Charging Community API.
+    /// Extension methods for the Open Charging Community API.
     /// </summary>
     public static class OpenChargingCommunityAPIExtensions
     {
@@ -88,7 +88,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -104,7 +104,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -124,7 +124,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -177,7 +177,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -198,7 +198,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -215,7 +215,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -268,7 +268,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -289,7 +289,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -306,7 +306,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -360,7 +360,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -376,7 +376,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -396,7 +396,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -412,7 +412,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -429,7 +429,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -483,7 +483,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -499,7 +499,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -519,7 +519,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -535,7 +535,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -552,7 +552,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -611,7 +611,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -629,7 +629,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -647,7 +647,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -665,7 +665,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid charging session identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -682,7 +682,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown charging session identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -751,7 +751,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -771,7 +771,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown roaming network identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -786,7 +786,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid reservation identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -803,7 +803,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown reservation identification!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -856,7 +856,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -877,7 +877,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EMobilityProviderId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -894,7 +894,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EMobilityProviderId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -949,7 +949,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -974,7 +974,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ParkingOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -991,7 +991,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ParkingOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1044,7 +1044,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1065,7 +1065,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid SmartCityId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1082,7 +1082,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown SmartCityId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1108,9 +1108,9 @@ namespace cloud.charging.open.API
         /// <param name="HTTPResponse">A HTTP error response.</param>
         /// <returns>True, when roaming network was found; false else.</returns>
         public static Boolean ParseRoamingNetworkAndGridOperator(this HTTPRequest           HTTPRequest,
-                                                                 OpenChargingCommunityAPI       OpenChargingCommunityAPI,
+                                                                 OpenChargingCommunityAPI   OpenChargingCommunityAPI,
                                                                  out IRoamingNetwork?       RoamingNetwork,
-                                                                 out GridOperator?          GridOperator,
+                                                                 out IGridOperator?         GridOperator,
                                                                  out HTTPResponse.Builder?  HTTPResponse)
         {
 
@@ -1155,7 +1155,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid GridOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1172,7 +1172,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown GridOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1230,7 +1230,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1251,7 +1251,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1268,7 +1268,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1288,7 +1288,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1305,7 +1305,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1366,7 +1366,7 @@ namespace cloud.charging.open.API
                     HTTPStatusCode  = HTTPStatusCode.BadRequest,
                     Server          = OpenChargingCommunityAPI.HTTPServer.DefaultServerName,
                     Date            = Timestamp.Now,
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1387,7 +1387,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1404,7 +1404,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingPoolId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1424,7 +1424,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1441,7 +1441,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1461,7 +1461,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1478,7 +1478,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1555,7 +1555,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1571,7 +1571,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1588,7 +1588,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid BrandId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1604,7 +1604,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown BrandId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1678,7 +1678,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1694,7 +1694,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1711,7 +1711,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationGroupId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1727,7 +1727,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationGroupId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1801,7 +1801,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1817,7 +1817,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown ChargingStationOperatorId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1834,7 +1834,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Invalid EVSEGroupId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1850,7 +1850,7 @@ namespace cloud.charging.open.API
                     Date            = Timestamp.Now,
                     ContentType     = HTTPContentType.Application.JSON_UTF8,
                     Content         = @"{ ""description"": ""Unknown EVSEGroupId!"" }".ToUTF8Bytes(),
-                    Connection      = "close"
+                    Connection      = ConnectionType.Close
                 };
 
                 return false;
@@ -1883,7 +1883,7 @@ namespace cloud.charging.open.API
 
             #endregion
 
-            return HTTPClient.CreateRequest(OpenChargingCommunityAPI.REMOTESTART, URL, BuilderAction);
+            return HTTPClient.CreateRequest(OpenChargingCommunityAPI.REMOTESTART, URL, RequestBuilder: BuilderAction);
 
         }
 
@@ -1906,7 +1906,7 @@ namespace cloud.charging.open.API
 
             #endregion
 
-            return HTTPClient.CreateRequest(OpenChargingCommunityAPI.REMOTESTOP, URL, BuilderAction);
+            return HTTPClient.CreateRequest(OpenChargingCommunityAPI.REMOTESTOP, URL, RequestBuilder: BuilderAction);
 
         }
 
@@ -1969,10 +1969,10 @@ namespace cloud.charging.open.API
         /// Create an instance of the Open Charging Community API.
         /// </summary>
         /// <param name="HTTPHostname">The HTTP hostname for all URLs within this API.</param>
-        /// <param name="ExternalDNSName">The offical URL/DNS name of this service, e.g. for sending e-mails.</param>
+        /// <param name="ExternalDNSName">The official URL/DNS name of this service, e.g. for sending e-mails.</param>
         /// <param name="HTTPServerPort">A TCP port to listen on.</param>
         /// <param name="BasePath">When the API is served from an optional subdirectory path.</param>
-        /// <param name="HTTPServerName">The default HTTP servername, used whenever no HTTP Host-header has been given.</param>
+        /// <param name="HTTPServerName">The default HTTP server name, used whenever no HTTP Host-header has been given.</param>
         /// 
         /// <param name="URLPathPrefix">A common prefix for all URLs.</param>
         /// <param name="HTTPServiceName">The name of the HTTP service.</param>
@@ -1991,7 +1991,7 @@ namespace cloud.charging.open.API
         /// <param name="SMTPClient">A SMTP client for sending e-mails.</param>
         /// <param name="SMSClient">A SMS client for sending SMS.</param>
         /// <param name="SMSSenderName">The (default) SMS sender name.</param>
-        /// <param name="TelegramClient">A Telegram client for sendind and receiving Telegrams.</param>
+        /// <param name="TelegramClient">A Telegram client for sending and receiving Telegrams.</param>
         /// 
         /// <param name="PasswordQualityCheck">A delegate to ensure a minimal password quality.</param>
         /// <param name="CookieName">The name of the HTTP Cookie for authentication.</param>
@@ -2006,11 +2006,11 @@ namespace cloud.charging.open.API
         /// 
         /// <param name="DisableMaintenanceTasks">Disable all maintenance tasks.</param>
         /// <param name="MaintenanceInitialDelay">The initial delay of the maintenance tasks.</param>
-        /// <param name="MaintenanceEvery">The maintenance intervall.</param>
+        /// <param name="MaintenanceEvery">The maintenance interval.</param>
         /// 
         /// <param name="DisableWardenTasks">Disable all warden tasks.</param>
         /// <param name="WardenInitialDelay">The initial delay of the warden tasks.</param>
-        /// <param name="WardenCheckEvery">The warden intervall.</param>
+        /// <param name="WardenCheckEvery">The warden interval.</param>
         /// 
         /// <param name="RemoteAuthServers">Servers for remote authorization.</param>
         /// <param name="RemoteAuthAPIKeys">API keys for incoming remote authorizations.</param>
@@ -2025,70 +2025,70 @@ namespace cloud.charging.open.API
         /// <param name="LogfileName">The name of the logfile.</param>
         /// <param name="LogfileCreator">A delegate for creating the name of the logfile for this API.</param>
         /// <param name="DNSClient">The DNS client of the API.</param>
-        public OpenChargingCommunityAPI(HTTPHostname?                        HTTPHostname                 = null,
-                                        String?                              ExternalDNSName              = null,
-                                        IPPort?                              HTTPServerPort               = null,
-                                        HTTPPath?                            BasePath                     = null,
-                                        String                               HTTPServerName               = DefaultHTTPServerName,
+        public OpenChargingCommunityAPI(HTTPHostname?                                              HTTPHostname                 = null,
+                                        String?                                                    ExternalDNSName              = null,
+                                        IPPort?                                                    HTTPServerPort               = null,
+                                        HTTPPath?                                                  BasePath                     = null,
+                                        String                                                     HTTPServerName               = DefaultHTTPServerName,
 
-                                        HTTPPath?                            URLPathPrefix                = null,
-                                        String                               HTTPServiceName              = DefaultHTTPServiceName,
-                                        String?                              HTMLTemplate                 = null,
-                                        JObject?                             APIVersionHashes             = null,
+                                        HTTPPath?                                                  URLPathPrefix                = null,
+                                        String                                                     HTTPServiceName              = DefaultHTTPServiceName,
+                                        String?                                                    HTMLTemplate                 = null,
+                                        JObject?                                                   APIVersionHashes             = null,
 
-                                        ServerCertificateSelectorDelegate?   ServerCertificateSelector    = null,
-                                        RemoteCertificateValidationHandler?  ClientCertificateValidator   = null,
-                                        LocalCertificateSelectionHandler?    ClientCertificateSelector    = null,
-                                        SslProtocols?                        AllowedTLSProtocols          = null,
-                                        Boolean?                             ClientCertificateRequired    = null,
-                                        Boolean?                             CheckCertificateRevocation   = null,
+                                        ServerCertificateSelectorDelegate?                         ServerCertificateSelector    = null,
+                                        RemoteTLSClientCertificateValidationHandler<IHTTPServer>?  ClientCertificateValidator   = null,
+                                        LocalCertificateSelectionHandler?                          LocalCertificateSelector     = null,
+                                        SslProtocols?                                              AllowedTLSProtocols          = null,
+                                        Boolean?                                                   ClientCertificateRequired    = null,
+                                        Boolean?                                                   CheckCertificateRevocation   = null,
 
-                                        ServerThreadNameCreatorDelegate?     ServerThreadNameCreator      = null,
-                                        ServerThreadPriorityDelegate?        ServerThreadPrioritySetter   = null,
-                                        Boolean?                             ServerThreadIsBackground     = null,
-                                        ConnectionIdBuilder?                 ConnectionIdBuilder          = null,
-                                        TimeSpan?                            ConnectionTimeout            = null,
-                                        UInt32?                              MaxClientConnections         = null,
+                                        ServerThreadNameCreatorDelegate?                           ServerThreadNameCreator      = null,
+                                        ServerThreadPriorityDelegate?                              ServerThreadPrioritySetter   = null,
+                                        Boolean?                                                   ServerThreadIsBackground     = null,
+                                        ConnectionIdBuilder?                                       ConnectionIdBuilder          = null,
+                                        TimeSpan?                                                  ConnectionTimeout            = null,
+                                        UInt32?                                                    MaxClientConnections         = null,
 
-                                        IPPort?                              TCPPort                      = null,
-                                        IPPort?                              UDPPort                      = null,
+                                        IPPort?                                                    TCPPort                      = null,
+                                        IPPort?                                                    UDPPort                      = null,
 
-                                        Organization_Id?                     AdminOrganizationId          = null,
-                                        EMailAddress?                        APIRobotEMailAddress         = null,
-                                        String?                              APIRobotGPGPassphrase        = null,
-                                        ISMTPClient?                         SMTPClient                   = null,
-                                        ISMSClient?                          SMSClient                    = null,
-                                        String?                              SMSSenderName                = null,
-                                        ITelegramStore?                      TelegramClient               = null,
+                                        Organization_Id?                                           AdminOrganizationId          = null,
+                                        EMailAddress?                                              APIRobotEMailAddress         = null,
+                                        String?                                                    APIRobotGPGPassphrase        = null,
+                                        ISMTPClient?                                               SMTPClient                   = null,
+                                        ISMSClient?                                                SMSClient                    = null,
+                                        String?                                                    SMSSenderName                = null,
+                                        ITelegramStore?                                            TelegramClient               = null,
 
-                                        PasswordQualityCheckDelegate?        PasswordQualityCheck         = null,
-                                        HTTPCookieName?                      CookieName                   = null,
-                                        Boolean                              UseSecureCookies             = true,
-                                        Languages?                           DefaultLanguage              = null,
+                                        PasswordQualityCheckDelegate?                              PasswordQualityCheck         = null,
+                                        HTTPCookieName?                                            CookieName                   = null,
+                                        Boolean                                                    UseSecureCookies             = true,
+                                        Languages?                                                 DefaultLanguage              = null,
 
-                                        Boolean?                             DisableMaintenanceTasks      = null,
-                                        TimeSpan?                            MaintenanceInitialDelay      = null,
-                                        TimeSpan?                            MaintenanceEvery             = null,
+                                        Boolean?                                                   DisableMaintenanceTasks      = null,
+                                        TimeSpan?                                                  MaintenanceInitialDelay      = null,
+                                        TimeSpan?                                                  MaintenanceEvery             = null,
 
-                                        Boolean?                             DisableWardenTasks           = null,
-                                        TimeSpan?                            WardenInitialDelay           = null,
-                                        TimeSpan?                            WardenCheckEvery             = null,
+                                        Boolean?                                                   DisableWardenTasks           = null,
+                                        TimeSpan?                                                  WardenInitialDelay           = null,
+                                        TimeSpan?                                                  WardenCheckEvery             = null,
 
-                                        IEnumerable<URLWithAPIKey>?          RemoteAuthServers            = null,
-                                        IEnumerable<APIKey_Id>?              RemoteAuthAPIKeys            = null,
+                                        IEnumerable<URLWithAPIKey>?                                RemoteAuthServers            = null,
+                                        IEnumerable<APIKey_Id>?                                    RemoteAuthAPIKeys            = null,
 
-                                        Boolean?                             AllowsAnonymousReadAccesss   = true,
+                                        Boolean?                                                   AllowsAnonymousReadAccess    = true,
 
-                                        Boolean?                             IsDevelopment                = null,
-                                        IEnumerable<String>?                 DevelopmentServers           = null,
-                                        Boolean                              SkipURLTemplates             = false,
-                                        String                               DatabaseFileName             = DefaultOpenChargingCommunityAPI_DatabaseFileName,
-                                        Boolean                              DisableNotifications         = false,
-                                        Boolean                              DisableLogging               = false,
-                                        String?                              LoggingPath                  = null,
-                                        String                               LogfileName                  = DefaultOpenChargingCommunityAPI_LogfileName,
-                                        LogfileCreatorDelegate?              LogfileCreator               = null,
-                                        DNSClient?                           DNSClient                    = null)
+                                        Boolean?                                                   IsDevelopment                = null,
+                                        IEnumerable<String>?                                       DevelopmentServers           = null,
+                                        Boolean                                                    SkipURLTemplates             = false,
+                                        String                                                     DatabaseFileName             = DefaultOpenChargingCommunityAPI_DatabaseFileName,
+                                        Boolean                                                    DisableNotifications         = false,
+                                        Boolean                                                    DisableLogging               = false,
+                                        String?                                                    LoggingPath                  = null,
+                                        String                                                     LogfileName                  = DefaultOpenChargingCommunityAPI_LogfileName,
+                                        LogfileCreatorDelegate?                                    LogfileCreator               = null,
+                                        DNSClient?                                                 DNSClient                    = null)
 
             : base(HTTPHostname,
                    ExternalDNSName,
@@ -2103,7 +2103,7 @@ namespace cloud.charging.open.API
 
                    ServerCertificateSelector,
                    ClientCertificateValidator,
-                   ClientCertificateSelector,
+                   LocalCertificateSelector,
                    AllowedTLSProtocols,
                    ClientCertificateRequired,
                    CheckCertificateRevocation,
@@ -2122,9 +2122,9 @@ namespace cloud.charging.open.API
                    APIRobotEMailAddress,
                    APIRobotGPGPassphrase,
                    SMTPClient,
-                   SMSClient,
-                   SMSSenderName,
-                   TelegramClient,
+                   //SMSClient,
+                   //SMSSenderName,
+                   //TelegramClient,
 
                    PasswordQualityCheck,
                    CookieName ?? HTTPCookieName.Parse(nameof(OpenChargingCommunityAPI)),
@@ -2142,7 +2142,7 @@ namespace cloud.charging.open.API
                    RemoteAuthServers,
                    RemoteAuthAPIKeys,
 
-                   AllowsAnonymousReadAccesss,
+                   AllowsAnonymousReadAccess,
 
                    IsDevelopment,
                    DevelopmentServers,
@@ -2289,7 +2289,7 @@ namespace cloud.charging.open.API
                                                   Server          = HTTPServer.DefaultServerName,
                                                   Date            = Timestamp.Now,
                                                   CacheControl    = "public, max-age=300",
-                                                  Connection      = "close"
+                                                  Connection      = ConnectionType.Close
                                               }.AsImmutable);
 
                                       else
@@ -2299,7 +2299,7 @@ namespace cloud.charging.open.API
                                                   ContentType     = HTTPContentType.Text.HTML_UTF8,
                                                   Content         = file.ToUTF8Bytes(),
                                                   CacheControl    = "public, max-age=300",
-                                                  Connection      = "close"
+                                                  Connection      = ConnectionType.Close
                                               }.AsImmutable);
 
                                   }
@@ -2320,7 +2320,7 @@ namespace cloud.charging.open.API
                                                   Server          = HTTPServer.DefaultServerName,
                                                   Date            = Timestamp.Now,
                                                   CacheControl    = "public, max-age=300",
-                                                  Connection      = "close"
+                                                  Connection      = ConnectionType.Close
                                               }.AsImmutable);
 
                                       #endregion
@@ -2363,7 +2363,7 @@ namespace cloud.charging.open.API
                                               //Expires          = "Mon, 25 Jun 2015 21:31:12 GMT",
 //                                              KeepAlive       = new KeepAliveType(TimeSpan.FromMinutes(5), 500),
 //                                              Connection      = "Keep-Alive",
-                                              Connection      = "close"
+                                              Connection      = ConnectionType.Close
                                           }.AsImmutable);
 
                                       #endregion
